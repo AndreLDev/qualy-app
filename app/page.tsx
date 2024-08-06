@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-4 ">
-      <h1 className="text-2xl font-bold mb-6 text-orange-600 text-center">Serviços de Papelaria</h1>
+      <h1 className="text-2xl font-bold mb-6 text-orange-600 text-center">Serviços QualyCopia</h1>
       <div className="w-full max-w-md px-4 flex flex-col items-center">
         <ServiceSelector selectedService={selectedService} setSelectedService={setSelectedService} />
         {selectedService && (
