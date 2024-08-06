@@ -21,14 +21,8 @@ const GenericServiceForm: React.FC<GenericServiceFormProps> = ({ handleCalculate
         value={quantity.toString()}
         onChange={(e) => setQuantity(parseInt(e.target.value))}
       />
-      <Button 
-        color="primary"
-        onClick={handleCalculate}
-        className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full max-w-xs mt-4">
-        Calcular
-      </Button>
       <div className="w-full max-w-xs mt-4 bg-white p-4 rounded shadow-md text-center">
-        <h2 className="text-xl font-bold text-orange-600">Custo Total: R$ {(totalCost * quantity).toFixed(2)}</h2>
+        <h2 className="text-xl font-bold text-orange-600">Custo Total: R$ {(totalCost * quantity).toFixed(2) == "NaN" ? "0.00" : (totalCost * quantity).toFixed(2)}</h2>
       </div>
     </div>
   );
