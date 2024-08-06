@@ -22,6 +22,7 @@ const ServiceForm: React.FC<ServiceFormProps> = (props) => {
     case 'copy':
       return <CopyForm {...props} />;
     case 'printing':
+        return <CopyForm {...props} />;
     case 'scanning':
     case 'typing':
     case 'resumes':

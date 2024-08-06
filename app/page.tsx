@@ -16,7 +16,7 @@ const Home = () => {
 
     switch (selectedService) {
       case 'copy':
-        const costPerPage = isColor ? 0.75 : 1.50;
+        const costPerPage = isColor ? 1.50 : 0.75;
         const bindingCost = isBound ? 5 : 0;
         cost = numPages * costPerPage + bindingCost;
         break;
